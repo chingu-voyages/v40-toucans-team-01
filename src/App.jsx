@@ -1,3 +1,17 @@
+
+import './App.css';
+import Carousel from './components/Carousel' ;
+
+export default function App() {
+
+    return(
+        <div>
+            <Carousel/>
+        </div>
+    )
+
+}
+
 import reactLogo from './assets/react.svg'
 import './App.css'
 
@@ -31,3 +45,4 @@ function App() {
 }
 
 export default App
+
