@@ -2,8 +2,8 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
-import logo from "./assets/logo.png";
-import magnifyingGlassSearch from "./assets/magnifyingGlassSearch.png";
+import logo from "../assets/logo.png";
+import magnifyingGlassSearch from "../assets/magnifyingGlassSearch.png";
 
 const navigation = [
   { name: "All Recipes", href: "#", current: false },
