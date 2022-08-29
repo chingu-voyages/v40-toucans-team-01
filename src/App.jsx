@@ -2,6 +2,7 @@
 import './App.css';
 import Carousel from './components/Carousel' ;
 import Navbar from './components/NavbarComponent'
+import RecipeCard from './components/RecipeCard';
 
 export default function App() {
 
@@ -9,6 +10,7 @@ export default function App() {
         <div>
             <Navbar />
             <Carousel/>
+            <RecipeCard />
         </div>
     )
 
