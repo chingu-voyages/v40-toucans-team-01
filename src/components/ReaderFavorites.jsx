@@ -15,7 +15,7 @@ export default function ReaderFavorites() {
           >
             <span
               data-class="mega__brandmark"
-              className="bg-[url('./src/assets/brandmark.svg')] bg-contain bg-center bg-no-repeat block w-[47px] h-[44px]"
+              className="bg-[url('/src/assets/brandmark.svg')] bg-contain bg-center bg-no-repeat block w-[47px] h-[44px]"
             ></span>
           </span>
           <form
