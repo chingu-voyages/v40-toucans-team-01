@@ -1,3 +1,5 @@
+export default function RecipeCard() {
+
 import React from "react";
 import drinks from "../assets/drinks.png";
 import eggplant from "../assets/eggplant.png";
@@ -16,15 +18,63 @@ function RecipeCard() {
             src={drinks}
             alt="refreshing drinks"
           />
-
-        <CategoryIcons  VG={true} V={true} DF={true} />
-
+          <div className="key">
+            <img
+              className="w-16 md:w-32 lg:w-48"
+              src={drinksKey}
+              alt="drinks recipe key"
+            />
+          </div>
           <h3>28 Refreshing Drinks for Summer</h3>
         </div>
 
         <div className="recipe">
           <img
             className="w-16 md:w-32 lg:w-48"
+            src={eggplant}
+            alt="eggplant recipes"
+          />
+          <div className="key">
+            <img
+              className="w-16 md:w-32 lg:w-48"
+              src={drinksKey}
+              alt="eggplant recipe key"
+            />
+          </div>
+          <h3>20 Delicious Plant-Based Eggplant Recipes</h3>
+        </div>
+
+        <div className="recipe">
+          <img
+            className="w-16 md:w-32 lg:w-48"
+            src={tomato}
+            alt="tomato recipes"
+          />
+          <div className="key">
+            <img
+              className="w-16 md:w-32 lg:w-48"
+              src={drinksKey}
+              alt="tomato recipe key"
+            />
+          </div>
+          <h3>16 Vibrant Fresh Tomato Recipes (Plant-Based)</h3>
+        <CategoryIcons  VG={true} V={true} DF={true} />
+          <h3>28 Refreshing Drinks for Summer</h3>
+        </div>
+
+        <div className="recipe">
+          <img
+            className="w-16 md:w-32 lg:w-48"
+            src={dessert}
+            alt="dessert recipes"
+          />
+          <div className="key">
+            <img
+              className="w-16 md:w-32 lg:w-48"
+              src={drinksKey}
+              alt="dessert recipe key"
+            />
+          </div>
             src={eggplant}
             alt="eggplant recipes"
           />
@@ -55,5 +105,3 @@ function RecipeCard() {
     </section>
   );
 }
-
-export default RecipeCard;
