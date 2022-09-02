@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     fontFamily: {
       bakerSans: [
+        '"Segoe UI"',
         '"Work Sans"',
         '-apple-system',
         'BlinkMacSystemFont',
-        '"Segoe UI"',
         'Roboto',
         'Oxygen-Sans',
         'Ubuntu',
