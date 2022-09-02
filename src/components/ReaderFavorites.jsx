@@ -84,7 +84,7 @@ export default function ReaderFavorites() {
                 <a
                   href="https://minimalistbaker.com/recipe-index/?fwp_special-diet=gluten-free"
                   data-class="recipe-key__label"
-                  class="recipe-key-label"
+                  className="recipe-key-label"
                 >
                   Gluten-Free
                 </a>
