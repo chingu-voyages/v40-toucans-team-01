@@ -1,7 +1,7 @@
-import React from "react";
+import { useState } from 'react';
 
 export default function Navbar({ fixed }) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
       <nav className="relative flex flex-wrap items-center sm:justify-center md:justify-between px-2 py-2 bg-rose-100 mb-3">
@@ -12,7 +12,6 @@ export default function Navbar({ fixed }) {
               href="#pablo"
             >
               <svg
-                
                 className="svg-icon hidden md:block"
                 width="16"
                 height="16"
@@ -40,7 +39,9 @@ export default function Navbar({ fixed }) {
             </button>
           </div>
           <div
-            className={"w-full relative flex w-auto static block justify-center flex "}
+            className={
+              'w-full relative flex w-auto static block justify-center flex '
+            }
             id="example-navbar-danger"
           >
             <ul className="flex flex-col flex-row list-none ml-auto flex-wrap items-center  ">
