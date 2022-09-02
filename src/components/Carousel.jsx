@@ -1,4 +1,5 @@
 // import Carousel from 'react-bootstrap/Carousel';
+import 'tw-elements';
 import teriyaki from '../assets/teriyaki.png';
 import taco from '../assets/taco.png';
 import cookies from '../assets/cookies.png';
