@@ -44,7 +44,7 @@ export default function Navbar({ fixed }) {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col flex-row list-none ml-auto flex-wrap items-center  ">
+            <ul className="flex flex-row list-none ml-auto flex-wrap items-center  ">
               <li className="nav-item">
                 <a
                   className="px-4 py-2 flex items-center text-xs uppercase font-bold leading-snug text-grey hover:opacity-75"
