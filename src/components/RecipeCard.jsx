@@ -1,11 +1,13 @@
-import React from 'react';
-import drinks from '../assets/drinks.png';
-import drinksKey from '../assets/drinksKey.png';
-import eggplant from '../assets/eggplant.png';
-import tomato from '../assets/tomato.png';
-import dessert from '../assets/desserts.png';
-
 export default function RecipeCard() {
+
+import React from "react";
+import drinks from "../assets/drinks.png";
+import eggplant from "../assets/eggplant.png";
+import tomato from "../assets/tomato.png";
+import dessert from "../assets/desserts.png";
+import CategoryIcons from "./CategoryIcons";
+
+function RecipeCard() {
   return (
     <section className="recipeRoundupContainer">
       <h2>RECIPE ROUND-UPS</h2>
@@ -56,6 +58,8 @@ export default function RecipeCard() {
             />
           </div>
           <h3>16 Vibrant Fresh Tomato Recipes (Plant-Based)</h3>
+        <CategoryIcons  VG={true} V={true} DF={true} />
+          <h3>28 Refreshing Drinks for Summer</h3>
         </div>
 
         <div className="recipe">
@@ -71,6 +75,30 @@ export default function RecipeCard() {
               alt="dessert recipe key"
             />
           </div>
+            src={eggplant}
+            alt="eggplant recipes"
+          />
+          <CategoryIcons  GF={true} VG={true} V={true} DF={true} NS={true}/>
+          <h3>20 Delicious Plant-Based Eggplant Recipes</h3>
+        </div>
+
+        <div className="recipe">
+          <img
+            className="w-16 md:w-32 lg:w-48"
+            src={tomato}
+            alt="tomato recipes"
+          />
+            <CategoryIcons VG={true} V={true} DF={true}/>
+          <h3>16 Vibrant Fresh Tomato Recipes (Plant-Based)</h3>
+        </div>
+
+        <div className="recipe">
+          <img
+            className="w-16 md:w-32 lg:w-48"
+            src={dessert}
+            alt="dessert recipes"
+          />
+                <CategoryIcons VG={true} V={true} DF={true}/>
           <h3>35 Easy No-Bake Desserts (Plant-Based!)</h3>
         </div>
       </div>
