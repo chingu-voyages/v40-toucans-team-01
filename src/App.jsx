@@ -4,7 +4,9 @@ import Carousel from './components/Carousel';
 import Navbar from './components/NavbarComponent';
 import RecipeCard from './components/RecipeCard';
 import ReaderFavorites from './components/ReaderFavorites';
+import FooterSocialMedia from './components/FooterSocialMedia';
 import Footer from './components/Footer';
+
 
 export default function App() {
   return (
@@ -14,6 +16,7 @@ export default function App() {
       <Carousel />
       <RecipeCard />
       <ReaderFavorites />
+      <FooterSocialMedia />
       <Footer />
     </div>
   );

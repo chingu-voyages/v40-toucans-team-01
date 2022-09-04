@@ -2,7 +2,7 @@ import React from "react";
 function Footer() {
   return (
     <footer className="text-center bg-orange-50 text-gray-800">
-      <div className="container pt-10">
+      <div className="container mx-auto pt-10">
         <div className="flex flex-col md:flex-row justify-center">
           <div className="py-3 md:py-0 px-4 text-xl">
             <a className="" href="#">
@@ -33,7 +33,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="container ">
+      <div className="container mx-auto">
       <div className="flex flex-col md:flex-row justify-center">
         
           <div className="py-3 md:py-0 px-4">
