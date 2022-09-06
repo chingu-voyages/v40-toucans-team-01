@@ -7,85 +7,56 @@ import CategoryIcons from "./CategoryIcons";
 
 export default function RecipeCard() {
   return (
-    <section className="recipeRoundupContainer">
-      <h2>RECIPE ROUND-UPS</h2>
-      <div className="recipesContainer md:flex justify-center">
-        <div className="recipe">
+    <section className="container mx-auto pt-10 pb-5 px-5">
+      <div className="border-t border-solid border-[#2A2B2A] p-5"></div>
+      <h2 className="text-3xl">RECIPE ROUND-UPS</h2>
+      <div className="recipesContainer grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 my-5">
+        <div className="recipe flex flex-col items-center justify-center my-3">
           <img
-            className="w-16 md:w-32 lg:w-48"
+            className="object-cover max-w-full h-auto"
             src={drinks}
             alt="refreshing drinks"
           />
-          <div className="key">
+          <div className="key pt-3">
             <CategoryIcons  VG={true} V={true} DF={true} />
           </div>
-          <h3>28 Refreshing Drinks for Summer</h3>
+          <h3 className="text-center">28 Refreshing Drinks for Summer</h3>
         </div>
 
-        <div className="recipe">
+        <div className="recipe flex flex-col items-center justify-center my-3">
           <img
-            className="w-16 md:w-32 lg:w-48"
+            className="object-cover max-w-full h-auto"
             src={eggplant}
             alt="eggplant recipes"
           />
-          <div className="key">
-            <CategoryIcons  VG={true} V={true} DF={true} />
+          <div className="key pt-3">
+            <CategoryIcons  VG={true} V={true} DF={true} NS={true}/>
           </div>
-          <h3>20 Delicious Plant-Based Eggplant Recipes</h3>
+          <h3 className="text-center">20 Delicious Plant-Based Eggplant Recipes</h3>
         </div>
 
-        <div className="recipe">
+        <div className="recipe flex flex-col items-center justify-center  my-3">
           <img
-            className="w-16 md:w-32 lg:w-48"
+            className="object-cover max-w-full h-auto"
             src={tomato}
             alt="tomato recipes"
           />
-          <div className="key">
-            <CategoryIcons  VG={true} V={true} DF={true} />
+          <div className="key pt-3">
+            <CategoryIcons  GF={true} VG={true} V={true} DF={true} NS={true} />
           </div>
-          <h3>16 Vibrant Fresh Tomato Recipes (Plant-Based)</h3>
-        <CategoryIcons  VG={true} V={true} DF={true} />
-          <h3>28 Refreshing Drinks for Summer</h3>
+          <h3 className="text-center">16 Vibrant Fresh Tomato Recipes (Plant-Based)</h3>
         </div>
 
-        <div className="recipe">
+        <div className="recipe flex flex-col items-center justify-center  my-3">
           <img
-            className="w-16 md:w-32 lg:w-48"
+            className="object-cover max-w-full h-auto"
             src={dessert}
             alt="dessert recipes"
           />
-          <div className="key">
+          <div className="key pt-3">
             <CategoryIcons  VG={true} V={true} DF={true} />
           </div>
-          <div className="recipe">
-            <img
-              className="w-16 md:w-32 lg:w-48"
-              src={eggplant}
-              alt="eggplant recipes"
-            />
-          <CategoryIcons  GF={true} VG={true} V={true} DF={true} NS={true}/>
-          <h3>20 Delicious Plant-Based Eggplant Recipes</h3>
-        </div>
-
-        <div className="recipe">
-          <img
-            className="w-16 md:w-32 lg:w-48"
-            src={tomato}
-            alt="tomato recipes"
-          />
-            <CategoryIcons VG={true} V={true} DF={true}/>
-          <h3>16 Vibrant Fresh Tomato Recipes (Plant-Based)</h3>
-        </div>
-
-        <div className="recipe">
-          <img
-            className="w-16 md:w-32 lg:w-48"
-            src={dessert}
-            alt="dessert recipes"
-          />
-                <CategoryIcons VG={true} V={true} DF={true}/>
-          <h3>35 Easy No-Bake Desserts (Plant-Based!)</h3>
-        </div>
+          <h3 className="text-center">35 Easy No-Bake Desserts (Plant-Based!)</h3>
         </div>
       </div>
     </section>

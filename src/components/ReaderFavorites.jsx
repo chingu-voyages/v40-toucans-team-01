@@ -1,3 +1,5 @@
+import RecipeCard from '../components/RecipeCard';
+
 export default function ReaderFavorites() {
   return (
     <div
@@ -811,6 +813,7 @@ export default function ReaderFavorites() {
           ></div>
         </div>
       </div>
+      <RecipeCard />
     </div>
   );
 }
