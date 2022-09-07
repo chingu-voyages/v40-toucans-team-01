@@ -25,7 +25,7 @@ export default function navbar() {
       {({ open }) => (
         <>
           <div className="container mx-auto  border-b-2 border-black max-w-screen-lg">
-            <div className=" flex items-center justify-around h-16">
+            <div className=" flex items-center justify-around h-40">
               <div className="flex items-center  sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="items-center p-2 rounded-md text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -48,7 +48,7 @@ export default function navbar() {
                           item.current
                             ? "bg-gray-900 text-white"
                             : "text-black",
-                          "px-3 py-2 rounded-md text-sm font-medium"
+                          "px-3 py-2 rounded-md text-lg font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -59,7 +59,7 @@ export default function navbar() {
                 </div>
               </div>
               <div className="flex items-center">
-                <img src={logo} style={{ height: "5vh" }} />
+                <img src={logo} style={{ height: "10vh" }} />
               </div>
               <div className="flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <Menu as="div" className="flex items-center">
@@ -73,7 +73,7 @@ export default function navbar() {
                             item.current
                               ? "bg-gray-900 text-white"
                               : "text-black",
-                            "px-3 py-2 rounded-md text-sm font-medium"
+                            "px-3 py-2 rounded-md text-lg font-medium"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
