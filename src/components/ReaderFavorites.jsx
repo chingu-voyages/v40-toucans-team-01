@@ -2,16 +2,13 @@ import RecipeCard from '../components/RecipeCard';
 
 export default function ReaderFavorites() {
   return (
-    <div
-      data-class="mega"
-      className="bg-[#FBF8F3] relative mb-[53px] md:py-[60px]"
-    >
+    <div data-class="mega" className="bg-[#FBF8F3] relative md:py-[60px]">
       <div data-class="wrap" className="max-w-[1200px] px-[16px] mx-auto">
         <div
           data-class="mega-inner"
           className="grid grid-areas-layout grid-cols-layout gap-x-16"
         >
-          <span
+          {/* <span
             data-class="mega__brandmark-container"
             className="flex justify-center items-center bg-[#FBF8F3] h-[106px] w-[106px] rounded-[50%] absolute bottom-[-53px] right-[calc(50%_-_53px)]"
           >
@@ -19,7 +16,7 @@ export default function ReaderFavorites() {
               data-class="mega__brandmark"
               className="bg-[url('/src/assets/brandmark.svg')] bg-contain bg-center bg-no-repeat block w-[47px] h-[44px]"
             ></span>
-          </span>
+          </span> */}
           <form
             role="search"
             method="get"
