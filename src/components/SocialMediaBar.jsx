@@ -4,8 +4,8 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center sm:justify-center md:justify-between px-2 py-2 bg-rose-100 mb-3">
-        <div className="container px-4 mx-auto flex flex-wrap items-center sm:justify-center md:justify-between">
+      <nav className="relative flex flex-wrap items-center sm:justify-center md:justify-between px-2 py-1 bg-rose-100 mb-3"style={{backgroundColor:"#ffded6"}}>
+        <div className="container px-10 mx-auto flex flex-wrap items-center sm:justify-center md:justify-between max-w-screen-xl">
           <div className="w-full relative flex justify-between w-auto static block justify-center ">
             <div
               className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-grey"
@@ -13,19 +13,19 @@ export default function Navbar({ fixed }) {
             >
               <svg
                 className="svg-icon hidden md:block"
-                width="16"
-                height="16"
+                width="20"
+                height="20"
                 aria-hidden="true"
                 role="img"
                 focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -3.5 29 32"
+                viewBox="0 0 29 32"
               >
                 <path d="M28.4501243,12.4 C28.4444806,18.6921406 23.342143,23.7900024 17.05,23.79 C15.5266386,23.8233305 14.0186342,23.4798216 12.66,22.79 L5,30.56 C4.41199697,31.0967002 3.65517844,31.4114519 2.86,31.45 C2.10217663,31.4281398 1.38353748,31.1083454 0.86,30.56 C-0.257531922,29.3984916 -0.257531922,27.5615084 0.86,26.4 L8,19.22 C5.00152809,15.2629568 4.91442496,9.81873792 7.78477557,5.7677983 C10.6551262,1.71685869 15.8203741,-0.0057325508 20.5476637,1.51142193 C25.2749532,3.02857642 28.4730951,7.43527534 28.4501243,12.4 Z M24,12.4 C24,8.57818953 20.9018105,5.48 17.08,5.48 C13.2581895,5.48 10.16,8.57818953 10.16,12.4 C10.16,16.2218104 13.2581896,19.3199999 17.08,19.3199999 C20.9018104,19.3199999 24,16.2218104 24,12.4 L24,12.4 Z"></path>
               </svg>
             </div>
             <div
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-grey hidden md:block"
+              className="text-sm leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-grey hidden md:block"
               href="#pablo"
             >
               SEARCH MINIMALIST BAKER
@@ -44,7 +44,7 @@ export default function Navbar({ fixed }) {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-row list-none ml-auto flex-wrap items-center  ">
+            <ul className="flex flex-row list-none ml-auto flex-wrap items-center">
               <li className="nav-item">
                 <a
                   className="px-4 py-2 flex items-center text-xs uppercase font-bold leading-snug text-grey hover:opacity-75"
