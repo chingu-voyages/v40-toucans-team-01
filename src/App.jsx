@@ -8,6 +8,8 @@ import FooterSocialMedia from './components/FooterSocialMedia';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import MegaWrapper from './components/MegaWrapper';
+import ExploreRecipesWrapper from './components/ExploreRecipesWrapper';
+import ExploreRecipes from './components/ExploreRecipes';
 
 export default function App() {
   return (
@@ -20,6 +22,9 @@ export default function App() {
           <ReaderFavorites />
           <RecipeCard />
         </MegaWrapper>
+        <ExploreRecipesWrapper>
+          <ExploreRecipes />
+        </ExploreRecipesWrapper>
       </Main>
       <FooterSocialMedia />
       <Footer />

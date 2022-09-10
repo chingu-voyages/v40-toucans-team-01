@@ -45,7 +45,7 @@ export default function RecipeCard({ title, src, srcSet, categoryIcons }) {
       >
         <a
           href="#"
-          className="text-[#212121] no-underline font-bold bg-transparent a-transition"
+          className="text-[#212121] no-underline font-bold bg-transparent a-transition hover:text-[#D56638]"
         >
           {title}
         </a>

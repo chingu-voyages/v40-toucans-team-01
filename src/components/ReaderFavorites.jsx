@@ -9,15 +9,15 @@ export default function ReaderFavorites() {
       data-class="mega-inner"
       className="xmd:grid xmd:grid-areas-layout xmd:grid-cols-layout xmd:gap-x-16"
     >
-      {/* <span
-            data-class="mega__brandmark-container"
-            className="flex justify-center items-center bg-[#FBF8F3] h-[106px] w-[106px] rounded-[50%] absolute bottom-[-53px] right-[calc(50%_-_53px)]"
-          >
-            <span
-              data-class="mega__brandmark"
-              className="bg-[url('/src/assets/brandmark.svg')] bg-contain bg-center bg-no-repeat block w-[47px] h-[44px]"
-            ></span>
-          </span> */}
+      <span
+        data-class="mega__brandmark-container"
+        className="flex justify-center items-center bg-[#FBF8F3] h-[106px] w-[106px] rounded-[50%] absolute bottom-[-53px] right-[calc(50%_-_53px)]"
+      >
+        <span
+          data-class="mega__brandmark"
+          className="bg-[url('/src/assets/brandmark.svg')] bg-contain bg-center bg-no-repeat block w-[47px] h-[44px]"
+        ></span>
+      </span>
       <SearchBar />
       <RecipeKey />
 

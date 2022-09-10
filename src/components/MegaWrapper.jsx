@@ -2,7 +2,7 @@ export default function MegaWrapper({ children }) {
   return (
     <div
       data-class="mega"
-      className="bg-[#FBF8F3] relative py-10 px-0 md:py-[60px] md:px-0"
+      className="bg-[#FBF8F3] relative py-10 px-0 mb-[53px] md:py-[60px] md:px-0"
     >
       <div
         data-class="wrap"
