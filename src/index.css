@@ -65,6 +65,18 @@
     margin-top: 32px;
   }
 
+  .explore-recipes-nav-left-margin-xmd:not(:first-child) {
+    margin-left: 14px;
+  }
+
+  .explore-recipes-nav-left-margin-msm:nth-child(2n) {
+    margin-left: 8px;
+  }
+
+  .explore-recipes-nav-bottom-margin-msm:nth-last-child(n+3) {
+    margin-bottom: 16px;
+  }
+
   .recipe-key-label {
     color: #2A2B2A;
     font-size: 16px;
