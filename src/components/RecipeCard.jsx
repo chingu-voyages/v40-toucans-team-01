@@ -1,64 +1,55 @@
-import React from "react";
-import drinks from "../assets/drinks.png";
-import eggplant from "../assets/eggplant.png";
-import tomato from "../assets/tomato.png";
-import dessert from "../assets/desserts.png";
-import CategoryIcons from "./CategoryIcons";
+import { useEffect, useState } from 'react';
+import CategoryIcons from './CategoryIcons';
 
-export default function RecipeCard() {
+export default function RecipeCard({ title, src, srcSet, categoryIcons }) {
+  const [icons, setIcons] = useState([]);
+
+  useEffect(() => {
+    setIcons([...categoryIcons]);
+  }, [categoryIcons]);
+
   return (
-    <section className="container mx-auto pt-10 pb-5 px-5">
-      <div className="border-t border-solid border-[#2A2B2A] p-5"></div>
-      <h2 className="text-3xl">RECIPE ROUND-UPS</h2>
-      <div className="recipesContainer grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 my-5">
-        <div className="recipe flex flex-col items-center justify-center my-3">
-          <img
-            className="object-cover max-w-full h-auto"
-            src={drinks}
-            alt="refreshing drinks"
-          />
-          <div className="key pt-3">
-            <CategoryIcons  VG={true} V={true} DF={true} />
-          </div>
-          <h3 className="text-center">28 Refreshing Drinks for Summer</h3>
-        </div>
-
-        <div className="recipe flex flex-col items-center justify-center my-3">
-          <img
-            className="object-cover max-w-full h-auto"
-            src={eggplant}
-            alt="eggplant recipes"
-          />
-          <div className="key pt-3">
-            <CategoryIcons  VG={true} V={true} DF={true} NS={true}/>
-          </div>
-          <h3 className="text-center">20 Delicious Plant-Based Eggplant Recipes</h3>
-        </div>
-
-        <div className="recipe flex flex-col items-center justify-center  my-3">
-          <img
-            className="object-cover max-w-full h-auto"
-            src={tomato}
-            alt="tomato recipes"
-          />
-          <div className="key pt-3">
-            <CategoryIcons  GF={true} VG={true} V={true} DF={true} NS={true} />
-          </div>
-          <h3 className="text-center">16 Vibrant Fresh Tomato Recipes (Plant-Based)</h3>
-        </div>
-
-        <div className="recipe flex flex-col items-center justify-center  my-3">
-          <img
-            className="object-cover max-w-full h-auto"
-            src={dessert}
-            alt="dessert recipes"
-          />
-          <div className="key pt-3">
-            <CategoryIcons  VG={true} V={true} DF={true} />
-          </div>
-          <h3 className="text-center">35 Easy No-Bake Desserts (Plant-Based!)</h3>
-        </div>
+    <article data-class="post-summary primary" className="text-center mb-8">
+      <a
+        data-class="post-summary__image"
+        className="block mb-2 text-[#D56638] font-bold underline bg-transparent a-transition md:mb-3"
+        href="#"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <img
+          width="500"
+          height="750"
+          decoding="async"
+          src={src}
+          data-src="https://minimalistbaker.com/wp-content/uploads/2018/02/PERFECT-Gluten-Free-Pizza-Crust-Fluffy-crispy-easy-to-make-10-ingredients-vegan-glutenfree-pizza-recipe-plantbased-minimalistbaker-19.jpg"
+          data-class="attachment-be_archive size-be_archive wp-image-30776 lazyloaded"
+          alt="Picking up a slice of gluten-free and vegan pizza made using our Gluten-Free Pizza Crust recipe"
+          data-srcset="https://minimalistbaker.com/wp-content/uploads/2018/02/PERFECT-Gluten-Free-Pizza-Crust-Fluffy-crispy-easy-to-make-10-ingredients-vegan-glutenfree-pizza-recipe-plantbased-minimalistbaker-19.jpg 1456w, https://minimalistbaker.com/wp-content/uploads/2018/02/PERFECT-Gluten-Free-Pizza-Crust-Fluffy-crispy-easy-to-make-10-ingredients-vegan-glutenfree-pizza-recipe-plantbased-minimalistbaker-19-600x900.jpg 600w, https://minimalistbaker.com/wp-content/uploads/2018/02/PERFECT-Gluten-Free-Pizza-Crust-Fluffy-crispy-easy-to-make-10-ingredients-vegan-glutenfree-pizza-recipe-plantbased-minimalistbaker-19-200x300.jpg 200w, https://minimalistbaker.com/wp-content/uploads/2018/02/PERFECT-Gluten-Free-Pizza-Crust-Fluffy-crispy-easy-to-make-10-ingredients-vegan-glutenfree-pizza-recipe-plantbased-minimalistbaker-19-768x1152.jpg 768w, https://minimalistbaker.com/wp-content/uploads/2018/02/PERFECT-Gluten-Free-Pizza-Crust-Fluffy-crispy-easy-to-make-10-ingredients-vegan-glutenfree-pizza-recipe-plantbased-minimalistbaker-19-683x1024.jpg 683w, https://minimalistbaker.com/wp-content/uploads/2018/02/PERFECT-Gluten-Free-Pizza-Crust-Fluffy-crispy-easy-to-make-10-ingredients-vegan-glutenfree-pizza-recipe-plantbased-minimalistbaker-19-680x1020.jpg 680w"
+          sizes="(max-width: 500px) 100vw, 500px"
+          data-pin-description="PERFECT Gluten Free Pizza Crust! Fluffy, crispy, easy to make, 10 ingredients! #vegan #glutenfree #pizza #recipe #plantbased #minimalistbaker"
+          srcSet={srcSet}
+        />
+        <noscript>Script support is not available in your browser!</noscript>
+      </a>
+      <div data-class="post-summary__content">
+        <CategoryIcons
+          icons={icons}
+          containerClass="mb-3.5 md:mb-3"
+          categoryClass="shrink-0"
+        />
       </div>
-    </section>
+      <h3
+        data-class="post-summary__title"
+        className="text-[19px] m-0 tracking-wide text-center msm:text-[20px] md:text-[21px]"
+      >
+        <a
+          href="#"
+          className="text-[#212121] no-underline font-bold bg-transparent a-transition"
+        >
+          {title}
+        </a>
+      </h3>
+    </article>
   );
 }
