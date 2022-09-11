@@ -10,6 +10,8 @@ import Main from './components/Main';
 import MegaWrapper from './components/MegaWrapper';
 import ExploreRecipesWrapper from './components/ExploreRecipesWrapper';
 import ExploreRecipes from './components/ExploreRecipes';
+import ShopWrapper from './components/ShopWrapper';
+import Shop from './components/Shop';
 
 export default function App() {
   return (
@@ -25,6 +27,9 @@ export default function App() {
         <ExploreRecipesWrapper>
           <ExploreRecipes />
         </ExploreRecipesWrapper>
+        <ShopWrapper>
+          <Shop />
+        </ShopWrapper>
       </Main>
       <FooterSocialMedia />
       <Footer />
