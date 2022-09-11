@@ -12,6 +12,10 @@ import ExploreRecipesWrapper from './components/ExploreRecipesWrapper';
 import ExploreRecipes from './components/ExploreRecipes';
 import ShopWrapper from './components/ShopWrapper';
 import Shop from './components/Shop';
+import SubscribeWrapper from './components/SubscribeWrapper';
+import Subscribe from './components/Subscribe';
+import PickWeekWrapper from './components/PickWeekWrapper';
+import PickWeek from './components/PickWeek';
 
 export default function App() {
   return (
@@ -20,6 +24,9 @@ export default function App() {
       <Navbar />
       <Main>
         <Carousel />
+        <PickWeekWrapper>
+          <PickWeek />
+        </PickWeekWrapper>
         <MegaWrapper>
           <ReaderFavorites />
           <RecipeCard />
@@ -30,6 +37,9 @@ export default function App() {
         <ShopWrapper>
           <Shop />
         </ShopWrapper>
+        <SubscribeWrapper>
+          <Subscribe />
+        </SubscribeWrapper>
       </Main>
       <FooterSocialMedia />
       <Footer />
