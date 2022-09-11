@@ -18,7 +18,7 @@ export default function RecipeRoundups() {
           className="hidden text-center md:block"
         >
           <a
-            className="text-[#2A2B2A] text-[18px] font-bakerOrator lowercase tracking-wide no-underline font-bold bg-transparent a-transition"
+            className="text-[#2A2B2A] text-[18px] font-bakerOrator lowercase tracking-wide no-underline font-bold bg-transparent a-transition hover:text-[#D56638]"
             href="#"
           >
             show me everything
