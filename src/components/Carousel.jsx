@@ -1,52 +1,7 @@
-// import Carousel from 'react-bootstrap/Carousel';
 import 'tw-elements';
-import teriyaki from '../assets/teriyaki.png';
-import taco from '../assets/taco.png';
-import cookies from '../assets/cookies.png';
-
-// function IndividualIntervalsExample() {
-//   return (
-//     <Carousel>
-//       <Carousel.Item interval={1000}>
-//         <img
-//           className="w-16 md:w-32 lg:w-48"
-//           src={teriyaki}
-//           alt="First slide"
-//         />
-//         <Carousel.Caption>
-//           <h3>Teriyaki Chicken</h3>
-//           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item interval={500}>
-//         <img
-//           className="w-16 md:w-32 lg:w-48"
-//           src={taco}
-//           alt="Second slide"
-//         />
-//         <Carousel.Caption>
-//           <h3>Taco</h3>
-//           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <img
-//           className="w-16 md:w-32 lg:w-48"
-//           src={cookies}
-//           alt="Third slide"
-//         />
-//         <Carousel.Caption>
-//           <h3>Cookies</h3>
-//           <p>
-//             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-//           </p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//     </Carousel>
-//   );
-// }
-
-// export default IndividualIntervalsExample;
+import teriyaki from '../assets/teriyaki.jpeg';
+import taco from '../assets/taco.jpeg';
+import cookies from '../assets/cookie.png';
 
 export default function Carousel() {
   return (
@@ -81,7 +36,7 @@ export default function Carousel() {
         <div className="carousel-item active relative float-left w-full">
           <img
             src={taco}
-            className="block w-full"
+            className="object-scale-down w-full"
             alt="Vegan Chorizo Breakfast Tacos"
           />
           <div className="carousel-caption hidden md:block absolute text-center">
@@ -92,7 +47,7 @@ export default function Carousel() {
         <div className="carousel-item relative float-left w-full">
           <img
             src={teriyaki}
-            className="block w-full"
+            className="object-scale-down w-full"
             alt="Grilled Teriyaki Chicken Skewers (Quick Marinating!)"
           />
           <div className="carousel-caption hidden md:block absolute text-center">
@@ -105,7 +60,7 @@ export default function Carousel() {
         <div className="carousel-item relative float-left w-full">
           <img
             src={cookies}
-            className="block w-full"
+            className="object-scale-down w-full"
             alt="1-Bowl Cowgirl Cookies (Vegan + Gluten-Free)"
           />
           <div className="carousel-caption hidden md:block absolute text-center">

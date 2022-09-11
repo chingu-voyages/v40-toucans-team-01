@@ -21,10 +21,10 @@ function classNames(...classes) {
 
 export default function navbar() {
   return (
-    <Disclosure as="nav" className="bg-white mt-5 ">
+    <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
-          <div className="container mx-auto  border-b-2 border-black max-w-screen-xl">
+          <div className="container mx-auto border-black max-w-screen-xl">
             <div className=" flex items-center justify-around h-40">
               <div className="flex items-center  lg:hidden">
                 {/* Mobile menu button*/}
