@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './src/**/*.{html,js,jsx}',
@@ -6,9 +7,8 @@ module.exports = {
     './node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
-    container:
-    {
-      center: true,
+    container: {
+      center: true
     },
     fontFamily: {
       bakerSans: [
@@ -23,9 +23,16 @@ module.exports = {
         '"Helvetica Neue"',
         'sans-serif'
       ],
-      bakerMono: ['Monaco', 'Menlo', 'Consolas', '"Courier New"', 'monospace']
+      bakerMono: ['Monaco', 'Menlo', 'Consolas', '"Courier New"', 'monospace'],
+      bakerOrator: ['OratorStd', 'monospace']
     },
     screens: {
+      xsm: '400px',
+      // => @media (min-width: 400px) { ... }
+
+      msm: '448px',
+      // => @media (min-width: 448px) { ... }
+
       sm: '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -37,6 +44,9 @@ module.exports = {
 
       lg: '1024px',
       // => @media (min-width: 1024px) { ... }
+
+      mlg: '1200px',
+      // => @media (min-width: 1200px) { ... }
 
       xl: '1280px',
       // => @media (min-width: 1280px) { ... }

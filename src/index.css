@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: OratorStd;
+  src: url(./assets/OratorStd.otf);
+}
+
 /* Create custom utilities */
 @layer utilities {
   .clip-search {
@@ -18,9 +23,7 @@
     align-items: center;
   }
 
-  .recipe-key-circle {
-    color: white;
-    margin-right: 6px;
+  .category-icon {
     font-weight: 700;
     text-decoration: none;
     border-radius: 50%;
@@ -28,23 +31,14 @@
     width: 32px;
     text-align: center;
     font-size: 14px;
-    letter-spacing: .035em;
+    letter-spacing: 0.035em;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .favorite-key-circle {
-    color: white;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: .035em;
-    text-decoration: none;
-  }
 
-  .favorite-key-circle-md {
+  .category-icon-md {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,25 +47,34 @@
     font-size: 14px;
   }
 
-  .GF {
-    color: #2A2B2A;
-    background-color: #FFDED6;
+  /* ==========================================================================
+     This acts as a :not(:first-child) ▼
+     ========================================================================== */
+
+  .category-icon+.category-icon,
+  .category-icon-md+.category-icon-md,
+  [data-class=iconsContainer]+[data-class=iconsContainer] {
+    margin-left: 14px;
   }
 
-  .VG {
-    background-color: #F74639;
+  /* ==========================================================================
+     This acts as a :not(:first-child) ▲
+     ========================================================================== */
+
+  .popular-post-top-margin-md:not(:first-child) {
+    margin-top: 32px;
   }
 
-  .V {
-    background-color: #D56638;
+  .explore-recipes-nav-left-margin-xmd:not(:first-child) {
+    margin-left: 14px;
   }
 
-  .DF {
-    background-color: #003811;
+  .explore-recipes-nav-left-margin-msm:nth-child(2n) {
+    margin-left: 8px;
   }
 
-  .NS {
-    background-color: #2A2B2A;
+  .explore-recipes-nav-bottom-margin-msm:nth-last-child(n+3) {
+    margin-bottom: 16px;
   }
 
   .recipe-key-label {
@@ -80,17 +83,6 @@
     letter-spacing: .035em;
     font-weight: 400;
     text-decoration: none;
-  }
-
-  .popular-post {
-    display: flex;
-    background-color: white;
-    position: relative;
-  }
-
-  .popular-post-md {
-    align-items: center;
-    margin-bottom: 10px;
   }
 
   .block-link {
